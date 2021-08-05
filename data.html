@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+    
+    <img class="container" src="diksha.jpg.jpeg" height="450px" width="350px">
+    <br>
+    <div class="H">
+      <h1 class="solid">ABOUT</h1>
+        <form class="box">
+    <ul>
+        <li>Name: Diksha</li>
+        <li>Projects:Web Development</li>
+        <li>Skills: NA</li>
+        <li>Experience: NA</li>
+        <li>Contact No.: 6203880143</li>
+    </ul>
+    <div class="C1" id="results">
+     <script>
+        const resultsList=document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+            resultsList.append(` ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+     </div>
+        </form>
+    
+</div>
+</body>
+</html>
